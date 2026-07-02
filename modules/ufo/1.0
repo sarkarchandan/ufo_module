@@ -50,7 +50,7 @@ prepend-path PATH		[getenv UFO_ROOT]/local/bin
 # Specific tp Ubuntu 24.04 (For RHEL 9 it should be site-packages like below)
 prepend-path PYTHONPATH        [getenv UFO_ROOT]/local/lib/python3.12/dist-packages
 # ufo-core/python
-#prepend-path PYTHONPATH        [getenv UFO_ROOT]/lib64/python3.9/site-packages
+#prepend-path PYTHONPATH        [getenv UFO_ROOT]/lib/python3.9/site-packages
 prepend-path XDG_DATA_DIRS    [getenv UFO_ROOT]/share
 
 # Compilation and Linking
