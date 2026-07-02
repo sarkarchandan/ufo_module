@@ -5,6 +5,7 @@
 
 - Change UFO\_ROOT at ufo.cfg to appropriate path for Maxwell.
 - Change UFO\_ROOT at modulefile to appropriate path for Maxwell. 
+- Change the PYTHON\_PATH according to Maxwell
 
 To verify that the ufo-installation actually worked we can execute the following script and see if it exits with code 0.
 
