@@ -234,12 +234,18 @@ install_tofu() {
     local install_root="$2"
 
     log_info "Building and installing tofu (Python package)"
-    log_info "Command: cd $tofu_dir && pip install . --prefix=$install_root --no-deps"
+    log_info "Command: cd $tofu_dir && pip install . --prefix=$install_root"
 
-    if ! (cd "$tofu_dir" && pip install . --prefix="$install_root" --no-deps --upgrade); then
+    if ! (cd "$tofu_dir" && pip install . --prefix="$install_root" --no-deps); then
         log_error "pip install failed for tofu"
         return 1
     fi
+
+#    if ! (cd "$tofu_dir" && pip install .[ez] --user); then
+#        log_error "pip install failed for tofu ez"
+#        return 1
+#    fi
+
 
     log_info "Successfully installed tofu"
     return 0
